@@ -1,7 +1,7 @@
 const Employee = require("../lib/Employee");
 
 it("creates an employee object", () => {
-  const data = { name: "Dave", id: 1, email: "me@me.com" };
+  const data = { name: "Razzle", id: 1, email: "razzle@mcdazzle.com" };
   const employee = new Employee(data);
 
   expect(employee.name).toEqual(expect.any(String));
@@ -10,7 +10,7 @@ it("creates an employee object", () => {
 });
 
 it("creates a return of the employees name", () => {
-  const data = { name: "Dave", id: 1, email: "me@me.com" };
+  const data = { name: "Razzle", id: 1, email: "razzle@mcdazzle.com" };
   const employee = new Employee(data);
 
   expect(employee.getName()).toEqual(data.name);
@@ -18,9 +18,9 @@ it("creates a return of the employees name", () => {
 
 it("creates a return of the employees id", () => {
   const data = {
-    name: "Dave",
+    name: "Razzle",
     id: 1,
-    email: "me@me.com",
+    email: "razzle@mcdazzle.com",
     occupation: "Employee",
   };
   const employee = new Employee(data);
@@ -30,9 +30,9 @@ it("creates a return of the employees id", () => {
 
 it("creates a return of the employees email", () => {
   const data = {
-    name: "Dave",
+    name: "Razzle",
     id: 1,
-    email: "me@me.com",
+    email: "razzle@mcdazzle.com",
     occupation: "Employee",
   };
   const employee = new Employee(data);
@@ -42,9 +42,9 @@ it("creates a return of the employees email", () => {
 
 it("creates a return of the employees occupation", () => {
   const data = {
-    name: "Dave",
+    name: "Razzle",
     id: 1,
-    email: "me@me.com",
+    email: "razzle@mcdazzle.com",
     occupation: "Employee",
   };
   const employee = new Employee(data);

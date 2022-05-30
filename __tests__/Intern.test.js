@@ -2,11 +2,11 @@ const Intern = require("../lib/Intern");
 
 it("creates the users GitHub account", () => {
   const data = {
-    name: "Dave",
+    name: "Razzle",
     id: 1,
-    email: "me@me.com",
+    email: "razzle@mcdazzle.com",
     occupation: "Intern",
-    school: "Vanderbilt University",
+    school: "Derek Zoolander Center",
   };
   const intern = new Intern(data);
 
@@ -15,11 +15,11 @@ it("creates the users GitHub account", () => {
 
 it("creates a return of the the interns occupation", () => {
   const data = {
-    name: "Dave",
+    name: "razzle",
     id: 1,
-    email: "me@me.com",
+    email: "razzle@mcdazzle.com",
     occupation: "Intern",
-    school: "Vanderbilt University",
+    school: "Derek Zoolander Center",
   };
   const intern = new Intern(data);
 

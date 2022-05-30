@@ -2,11 +2,11 @@ const Engineer = require("../lib/Engineer");
 
 it("creates the users GitHub account", () => {
   const data = {
-    name: "Dave",
+    name: "Razzle",
     id: 1,
-    email: "me@me.com",
+    email: "razzle@mcdazzle.com",
     occupation: "Engineer",
-    github: "me123",
+    github: "razzle",
   };
   const engineer = new Engineer(data);
 
@@ -15,14 +15,14 @@ it("creates the users GitHub account", () => {
 
 it("creates a return of the the engineers occupation", () => {
   const data = {
-    name: "Dave",
+    name: "Razzle",
     id: 1,
-    email: "me@me.com",
+    email: "razzle@mcdazzle.com",
     occupation: "Engineer",
-    github: "me123",
+    github: "razzle",
   };
   const engineer = new Engineer(data);
 
   expect(engineer.getRole()).toEqual(data.occupation);
 });
-s
+s;
