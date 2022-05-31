@@ -25,4 +25,3 @@ it("creates a return of the the engineers occupation", () => {
 
   expect(engineer.getRole()).toEqual(data.occupation);
 });
-s;

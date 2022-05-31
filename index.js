@@ -3,25 +3,29 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 fs = require("fs");
 
-prompts().then((input) => {
-  let team = [];
-  input.forEach((element) => {
+const inquirer = require("inquirer");
+const generate = require("./lib/generate");
+const prompts = require("./lib/prompts");
+
+prompts().then((data) => {
+  let peopleData = [];
+  data.forEach((element) => {
     switch (element.occupation) {
       case "Manager":
         const manager = new Manager(element);
-        team.push(manager);
+        peopleData.push(manager);
         return;
       case "Engineer":
         const engineer = new Engineer(element);
-        team.push(engineer);
+        peopleData.push(engineer);
         return;
       case "Intern":
         const intern = new Intern(element);
-        team.push(intern);
+        peopleData.push(intern);
         return;
     }
   });
-  fs.writeFile(`./dist/index.html`, markupGenerator(team), (err) => {
+  fs.writeFile(`./dist/index.html`, generate(peopleData), (err) => {
     if (err) {
       reject(err);
       return;
